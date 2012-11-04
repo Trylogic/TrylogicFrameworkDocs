@@ -18,6 +18,7 @@ ViewController - это "мозги" вашего вида. Вся логика,
 Для примера возьмём этот простой вид (для описания View так же используется MXML, хотя вы и можете делать это в Pure AS коде):
 
 .. code-block:: mxml
+	:linenos:
 
 	<?xml version="1.0"?>
 	<gui:ContainerBase xmlns:fx="http://ns.adobe.com/mxml/2009"
@@ -57,6 +58,7 @@ Outlets
 Понятия аутлетов было взято создателями TF из мира iOS. Они позволяют связать определённую составляющую вида с свойством контроллера. На самом деле, со стороны View аутлеты есть не что иное, как обычные свойства. Чтобы получить ссылку на наш аутлет в контроллере, мы должны объявить свойство контроллера с таким же именем и namespace-ом outlet. Примерно вот так:
  
 .. code-block:: as3
+	:linenos:
 
 	public class DummyApplicationViewController extends ViewController
 	{
