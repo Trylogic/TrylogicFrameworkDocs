@@ -9,9 +9,10 @@
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    
    intro
+   struct
 
 Indices and tables
 ==================
