@@ -13,6 +13,7 @@ Contents:
    
    intro
    struct
+   view
 
 Indices and tables
 ==================
