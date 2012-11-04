@@ -22,7 +22,6 @@ Bootstrap
 .. image:: _static/BootstrapExample.png
 	:align: center
 	:target: https://gist.github.com/4013613
-	:name: blabla
 
 Выбор системы отрисовки, используемой фреймворком, осуществляется с помощью указания одного лишь namespace-а для этого класса. В данном примере указано пространство имён "http://www.trylogic.ru/native", что означает, что для отрисовки будет использован стандартный пакет ``flash.display.*``, но, сменив его на, к примеру, "http://www.trylogic.ru/starling", приложение будет отрисовываться уже с помощью Starling Framework-а.
 
