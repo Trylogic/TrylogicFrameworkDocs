@@ -1,4 +1,4 @@
 TrylogicFrameworkDocs
 =====================
 
-documentation for TrylogicFramework
+https://trylogicframwork.readthedocs.org/en/latest/
