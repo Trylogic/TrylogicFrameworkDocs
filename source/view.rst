@@ -6,6 +6,9 @@ View - абстракция представления
 
 В терминах TrylogicFramework-а, View является единицей отображения. Так что же представляет из себя View на самом деле? Давайте посмотрим:
 
+| 
+| 
+
 .. image:: _static/ViewDescription.png
 	:align: center
 	
@@ -15,6 +18,7 @@ View - абстракция представления
 | 
 Для примера возьмём этот простой вид (для описания View так же используется MXML, хотя вы и можете делать это в Pure AS коде):
 
+| 
 .. code-block:: mxml
 	:linenos:
 
@@ -24,7 +28,9 @@ View - абстракция представления
 				   xmlns:trylogic="http://www.trylogic.ru/"
 				   xmlns:s="library://ns.adobe.com/flex/spark">
 
-		<gui:controllerClass>ru.trylogic.dummy.views.dummyApplicationView.DummyApplicationViewController</gui:controllerClass>
+		<gui:controllerClass>
+			ru.trylogic.dummy.views.dummyApplicationView.DummyApplicationViewController
+		</gui:controllerClass>
 
 		<gui:eventMaps>
 			<trylogic:EventMap source="{myButton}" type="tap" destination="{new Event('myButtonTapped')}" />
@@ -38,7 +44,8 @@ View - абстракция представления
 		<gui:Button id="myButton" x="100" y="100" y.another="200" />
 
 	</gui:ContainerBase>
-	
+
+| 	
 
 Как Вы видите, контроллер вида задаётся явно в виде класса. У одного вида может быть только один контроллер, и наоборот.
 

@@ -34,10 +34,14 @@ Bootstrap
 		</native:services>
 
 		<native:iocMap>
-			<trylogic:Associate iface="tl.actions.IActionLogger" withClass="ru.trylogic.dummy.core.DummyActionLogger" factory="tl.factory.SingletonFactory" />
+			<trylogic:Associate iface="tl.actions.IActionLogger"
+						withClass="ru.trylogic.dummy.core.DummyActionLogger"
+						factory="tl.factory.SingletonFactory" />
 		</native:iocMap>
 
-		<native:applicationViewClass>ru.trylogic.dummy.views.dummyApplicationView.DummyApplicationView</native:applicationViewClass>
+		<native:applicationViewClass>
+			ru.trylogic.dummy.views.dummyApplicationView.DummyApplicationView
+		</native:applicationViewClass>
 
 	</native:Bootstrap>
 
