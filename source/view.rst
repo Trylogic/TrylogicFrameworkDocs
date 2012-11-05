@@ -20,7 +20,6 @@ View - абстракция представления
 
 | 
 .. code-block:: mxml
-	:linenos:
 
 	<?xml version="1.0"?>
 	<gui:ContainerBase xmlns:fx="http://ns.adobe.com/mxml/2009"
@@ -28,9 +27,7 @@ View - абстракция представления
 				   xmlns:trylogic="http://www.trylogic.ru/"
 				   xmlns:s="library://ns.adobe.com/flex/spark">
 
-		<gui:controllerClass>
-			ru.trylogic.dummy.views.dummyApplicationView.DummyApplicationViewController
-		</gui:controllerClass>
+		<gui:controllerClass>ru.trylogic.dummy.views.dummyApplicationView.DummyApplicationViewController</gui:controllerClass>
 
 		<gui:eventMaps>
 			<trylogic:EventMap source="{myButton}" type="tap" destination="{new Event('myButtonTapped')}" />

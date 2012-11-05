@@ -18,7 +18,6 @@ Bootstrap
 Рассмотрим типичный пример такого класса (настоятельно рекомендуется использовать MXML для его описания):
 
 .. code-block:: mxml
-	:linenos:
 
 	<?xml version="1.0"?>
 	<native:Bootstrap xmlns:fx="http://ns.adobe.com/mxml/2009"
@@ -34,9 +33,7 @@ Bootstrap
 		</native:services>
 
 		<native:iocMap>
-			<trylogic:Associate iface="tl.actions.IActionLogger"
-						withClass="ru.trylogic.dummy.core.DummyActionLogger"
-						factory="tl.factory.SingletonFactory" />
+			<trylogic:Associate iface="tl.actions.IActionLogger" withClass="ru.trylogic.dummy.core.DummyActionLogger" factory="tl.factory.SingletonFactory" />
 		</native:iocMap>
 
 		<native:applicationViewClass>
