@@ -91,6 +91,26 @@ Lifecycle функции
 #. **viewUnloaded** - ViewController отвязался от View, outlet-ы уже недоступны, но ссылка на view ещё есть - это Ваш последний шанс "подчистить" View 
 #. **destroy** - вызывается перед тем, как ViewController будет уничтожен (здесь вы можете отписаться от каких-то собственных событий, остановить таймеры и так далее)
 
+В примере был использован метод **viewBeforeAddedToStage** таким образом:
+
+.. code-block:: as3
+
+	public class DummyApplicationViewController extends ViewController
+	{
+		outlet var myButton : Button;
+
+		public function DummyApplicationViewController()
+		{
+		}
+
+		override lifecycle function viewBeforeAddedToStage() : void
+		{
+			myButton.text = "Click me!";
+		}
+	}
+	
+обратите внимание, что здесь мы спокойно устанавливаем свойства outlet-а, потому что мы знаем, что в этом этапе жизненного цикла это можно делать. 
+
 | 
 EventHandlers
 ~~~~~~~~~~~~~~~~~~~~~~
