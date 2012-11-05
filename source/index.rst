@@ -14,6 +14,7 @@ Contents:
    intro
    struct
    view
+   viewController
 
 Indices and tables
 ==================
