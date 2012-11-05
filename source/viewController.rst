@@ -15,10 +15,9 @@ ViewController - это "мозги" вашего вида. Вся логика,
 	{
 
 		outlet var myButton : Button;
-		outlet var myImage : Image;
 
 		outlet var defaultState : State;
-		outlet var imageState : State;
+		outlet var anotherState : State;
 
 		public function DummyApplicationViewController()
 		{
@@ -33,9 +32,7 @@ ViewController - это "мозги" вашего вида. Вся логика,
 		{
 			myButton.text = "Well done!";
 
-			view.currentState = imageState.name;
-
-			(myImage.texture as BitmapData).noise(Math.random() * 100);
+			view.currentState = anotherState.name;
 		}
 	}
 
